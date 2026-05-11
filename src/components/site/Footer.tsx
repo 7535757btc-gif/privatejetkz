@@ -75,9 +75,11 @@ export function Footer() {
               <Youtube size={16} />
             </a>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground">{t.footer.hours}</p>
-          <p className="mt-1 text-sm text-muted-foreground">{t.footer.city}</p>
-          <p className="mt-1 text-sm text-muted-foreground">{t.footer.address}</p>
+          <div className="mt-4 space-y-1 text-sm text-muted-foreground">
+            <p><span className="text-foreground/50">Режим работы · </span>{t.footer.hours}</p>
+            <p>{t.footer.city}</p>
+            <p>{t.footer.address}</p>
+          </div>
         </div>
       </div>
       <div className="border-t border-gold/10">

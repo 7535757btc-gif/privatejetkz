@@ -260,10 +260,10 @@ const ru: Dict = {
   },
   footer: {
     rights: "© Private Jet KZ — все права защищены",
-    city: "Астана, Казахстан",
-    hours: "24 / 7",
+    city: "г. Астана, Казахстан",
+    hours: "24/7",
     nav: "Навигация",
-    address: "ул. Толе би, 25/1, г. Астана",
+    address: "ул. Толе Би 25/1",
   },
   fleetGallery: {
     eyebrow: "Наш автопарк",
@@ -501,10 +501,10 @@ const kz: Dict = {
   },
   footer: {
     rights: "© Private Jet KZ — барлық құқықтар қорғалған",
-    city: "Астана, Қазақстан",
-    hours: "24 / 7",
+    city: "Астана қ., Қазақстан",
+    hours: "24/7",
     nav: "Навигация",
-    address: "Төле би к-сі, 25/1, Астана қ.",
+    address: "Төле Би к-сі, 25/1",
   },
   fleetGallery: {
     eyebrow: "Біздің автопарк",
@@ -736,9 +736,9 @@ const en: Dict = {
   footer: {
     rights: "© Private Jet KZ — all rights reserved",
     city: "Astana, Kazakhstan",
-    hours: "24 / 7",
+    hours: "24/7",
     nav: "Navigation",
-    address: "25/1 Tole bi St, Astana",
+    address: "25/1 Tole Bi St",
   },
   fleetGallery: {
     eyebrow: "Our fleet",

@@ -300,7 +300,7 @@ const ru: Dict = {
         name: "VIP трансфер по городу",
         price: "от 25 000 ₸",
         desc: "Аэропорт, деловая встреча, ресторан, мероприятие.",
-        bullets: ["Подача за 5 минут до времени", "Водитель в деловом костюме", "Помощь с багажом", "Бутылка воды в салоне"],
+        bullets: ["Подача за 5 минут до времени", "Водитель в презентабельном виде", "Помощь с багажом", "Бутылка воды в салоне"],
         waText: "Здравствуйте, нужен VIP трансфер по Астане.",
       },
       {
@@ -540,7 +540,7 @@ const kz: Dict = {
         name: "Қала бойынша VIP трансфер",
         price: "25 000 ₸ бастап",
         desc: "Әуежай, кездесу, мейрамхана, іс-шара.",
-        bullets: ["Уақытқа дейін 5 минут бұрын келу", "Іскерлік костюмдегі жүргізуші", "Жүкке көмек", "Салонда су бөтелкесі"],
+        bullets: ["Уақытқа дейін 5 минут бұрын келу", "Презентабельді жүргізуші", "Жүкке көмек", "Салонда су бөтелкесі"],
         waText: "Сәлем, Астана бойынша VIP трансфер керек.",
       },
       {
@@ -773,7 +773,7 @@ const en: Dict = {
         name: "VIP transfer in the city",
         price: "from 25 000 ₸",
         desc: "Airport, business meeting, restaurant, event.",
-        bullets: ["Arrives 5 minutes before time", "Suited chauffeur", "Help with luggage", "Bottle of water inside"],
+        bullets: ["Arrives 5 minutes before time", "Driver in smart presentable dress", "Help with luggage", "Bottle of water inside"],
         waText: "Hello, I need a VIP transfer in Astana.",
       },
       {

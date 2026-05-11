@@ -84,6 +84,7 @@ type Dict = {
   fleetPage: {
     title: string;
     sub: string;
+    specTitle: string;
     spec: { label: string; value: string }[];
     feature: { t: string; d: string }[];
   };
@@ -271,13 +272,18 @@ const ru: Dict = {
   fleetPage: {
     title: "Hyundai Staria LUXE",
     sub: "Топовая комплектация. Все 5 машин — одинаковые, ухоженные, с капитанскими креслами.",
+    specTitle: "Опции трансфера",
     spec: [
       { label: "Мест для пассажиров", value: "до 6" },
       { label: "Капитанские кресла", value: "Кожа, подогрев" },
-      { label: "Подсветка салона", value: "Янтарная Ambient" },
+      { label: "Люк", value: "Панорамный · 2 ряда" },
+      { label: "Тонированные окна", value: "Задние стёкла" },
       { label: "Багажник", value: "До 6 чемоданов" },
       { label: "Климат", value: "Многозонный" },
       { label: "Wi-Fi / Зарядки", value: "USB-C, Type-A" },
+      { label: "Складные сиденья", value: "3-й ряд" },
+      { label: "Усиленная печка", value: "Быстрый прогрев" },
+      { label: "Бутылка воды", value: "В каждой поездке" },
     ],
     feature: [
       { t: "Тонировка задних окон", d: "Конфиденциальность во время поездки" },
@@ -506,13 +512,18 @@ const kz: Dict = {
   fleetPage: {
     title: "Hyundai Staria LUXE",
     sub: "Топ комплектация. 5 көліктің барлығы — бірдей, ұқыпты, капитан орындықтармен.",
+    specTitle: "Трансфер опциялары",
     spec: [
       { label: "Жолаушы орындары", value: "6 дейін" },
       { label: "Капитан орындықтар", value: "Былғары, жылыту" },
-      { label: "Салон жарығы", value: "Янтарь Ambient" },
+      { label: "Люк", value: "Панорамды · 2 қатар" },
+      { label: "Тонировкаланған әйнектер", value: "Артқы шынылар" },
       { label: "Багаж", value: "6 чемоданға дейін" },
       { label: "Климат", value: "Көп аймақты" },
       { label: "Wi-Fi / Зарядтау", value: "USB-C, Type-A" },
+      { label: "Бүктелетін орындықтар", value: "3-ші қатар" },
+      { label: "Күшейтілген жылытқыш", value: "Жылдам жылыту" },
+      { label: "Су бөтелкесі", value: "Әр сапарда" },
     ],
     feature: [
       { t: "Артқы әйнек тонировкасы", d: "Сапар кезіндегі құпиялылық" },
@@ -734,13 +745,18 @@ const en: Dict = {
   fleetPage: {
     title: "Hyundai Staria LUXE",
     sub: "Top trim. All 5 cars — identical, well-maintained, with captain seats.",
+    specTitle: "Transfer options",
     spec: [
       { label: "Passenger seats", value: "up to 6" },
       { label: "Captain seats", value: "Leather, heated" },
-      { label: "Cabin lighting", value: "Amber Ambient" },
+      { label: "Sunroof", value: "Panoramic · 2 rows" },
+      { label: "Tinted windows", value: "Rear glass" },
       { label: "Luggage", value: "Up to 6 cases" },
       { label: "Climate", value: "Multi-zone" },
       { label: "Wi-Fi / Charging", value: "USB-C, Type-A" },
+      { label: "Folding seats", value: "3rd row" },
+      { label: "Reinforced heater", value: "Fast warm-up" },
+      { label: "Water bottle", value: "Every ride" },
     ],
     feature: [
       { t: "Tinted rear windows", d: "Privacy on the road" },

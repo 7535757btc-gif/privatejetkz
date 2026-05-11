@@ -50,7 +50,7 @@ export function Hero() {
         </p>
         <div className="mt-8 md:mt-10 flex flex-wrap gap-3">
           <MagneticButton
-            href={wa(t.cta.book)}
+            href={wa(t.cta.bookMsg)}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3.5 rounded-full text-sm font-medium text-background bg-gradient-to-br from-[var(--gold-bright)] to-[var(--gold)] hover:to-[var(--gold-bright)] shadow-[var(--shadow-gold)]"

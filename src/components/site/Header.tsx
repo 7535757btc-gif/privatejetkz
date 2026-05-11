@@ -63,7 +63,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <LangSwitch locale={locale} setLocale={setLocale} />
           <a
-            href={wa(t.cta.book)}
+            href={wa(t.cta.bookMsg)}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-background bg-gradient-to-br from-[var(--gold-bright)] to-[var(--gold)] hover:to-[var(--gold-bright)] transition-all shadow-[var(--shadow-gold)]"
@@ -102,7 +102,7 @@ export function Header() {
             </Link>
           ))}
           <a
-            href={wa(t.cta.book)}
+            href={wa(t.cta.bookMsg)}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 text-center px-5 py-3 rounded-full text-sm font-medium text-background bg-gradient-to-br from-[var(--gold-bright)] to-[var(--gold)]"

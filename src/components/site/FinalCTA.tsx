@@ -29,7 +29,7 @@ export function FinalCTA() {
         <Reveal delay={350}>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <MagneticButton
-              href={wa(t.cta.book)}
+              href={wa(t.cta.bookMsg)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full font-medium text-background bg-gradient-to-br from-[var(--gold-bright)] to-[var(--gold)] shadow-[var(--shadow-gold)]"

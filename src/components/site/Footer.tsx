@@ -48,7 +48,7 @@ export function Footer() {
             {PHONE}
           </a>
           <a
-            href={wa(t.cta.book)}
+            href={wa(t.cta.bookMsg)}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 inline-block text-sm text-foreground/70 hover:text-gold transition-colors"

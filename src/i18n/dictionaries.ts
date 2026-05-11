@@ -20,7 +20,7 @@ type Dict = {
   brand: string;
   tagline: string;
   nav: { home: string; fleet: string; services: string; contact: string };
-  cta: { book: string; whatsapp: string; call: string; viewTariffs: string; discuss: string };
+  cta: { book: string; bookMsg: string; whatsapp: string; call: string; viewTariffs: string; discuss: string };
   hero: {
     eyebrow: string;
     title1: string;
@@ -115,6 +115,7 @@ const ru: Dict = {
   nav: { home: "Главная", fleet: "Автопарк", services: "Услуги", contact: "Контакты" },
   cta: {
     book: "Заказать в WhatsApp",
+    bookMsg: "Здравствуйте, пишу с вашего сайта, хочу заказать трансфер",
     whatsapp: "WhatsApp",
     call: "Позвонить",
     viewTariffs: "Посмотреть тарифы",
@@ -355,6 +356,7 @@ const kz: Dict = {
   nav: { home: "Басты бет", fleet: "Автопарк", services: "Қызметтер", contact: "Байланыс" },
   cta: {
     book: "WhatsApp арқылы тапсырыс",
+    bookMsg: "Сәлем, сіздің сайтыңыздан жазып тұрмын, трансфер тапсырыс бергім келеді",
     whatsapp: "WhatsApp",
     call: "Қоңырау шалу",
     viewTariffs: "Тарифтерді көру",
@@ -595,6 +597,7 @@ const en: Dict = {
   nav: { home: "Home", fleet: "Fleet", services: "Services", contact: "Contact" },
   cta: {
     book: "Book on WhatsApp",
+    bookMsg: "Hello, I'm writing from your website and would like to book a transfer",
     whatsapp: "WhatsApp",
     call: "Call",
     viewTariffs: "View tariffs",

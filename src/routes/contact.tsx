@@ -51,7 +51,7 @@ function ContactPage() {
         <Reveal delay={200}>
           <div className="mt-14 grid md:grid-cols-2 gap-6">
             <a
-              href={wa(t.cta.book)}
+              href={wa(t.cta.bookMsg)}
               target="_blank"
               rel="noopener noreferrer"
               className="p-8 rounded-2xl border border-gold/30 bg-[var(--surface)] hover:border-gold transition-all group"

@@ -5,7 +5,7 @@ export function FloatingWhatsApp() {
   const { t } = useLocale();
   return (
     <a
-      href={wa(t.cta.book)}
+      href={wa(t.cta.bookMsg)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="WhatsApp"

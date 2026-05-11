@@ -130,7 +130,7 @@ const ru: Dict = {
     badge1: "10 лет · 5 авто · 3 000+ поездок",
     badge2: "Флот из 5 авто",
     badge3: "Капитанские кресла",
-    badge4: "Солидные водители",
+    badge4: "Опытные водители",
     scroll: "Прокрутите вниз",
   },
   headlights: {
@@ -371,7 +371,7 @@ const kz: Dict = {
     badge1: "10 жыл · 5 авто · 3 000+ сапар",
     badge2: "5 көліктен флот",
     badge3: "Капитан орындықтар",
-    badge4: "Сыпайы жүргізушілер",
+    badge4: "Тәжірибелі жүргізушілер",
     scroll: "Төмен айналдырыңыз",
   },
   headlights: {
@@ -612,7 +612,7 @@ const en: Dict = {
     badge1: "10 years · 5 cars · 3,000+ rides",
     badge2: "Fleet of 5 cars",
     badge3: "Captain seats",
-    badge4: "Professional chauffeurs",
+    badge4: "Experienced drivers",
     scroll: "Scroll down",
   },
   headlights: {

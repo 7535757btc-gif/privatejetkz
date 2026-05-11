@@ -24,7 +24,7 @@ const faqs = {
         },
         {
             q: "Нужно ли платить заранее?",
-            a: "Нет. Оплата производится по факту поездки. Предоплата не требуется.",
+            a: "Для подтверждения бронирования просим предоплату 10–20%. Остаток оплачивается по факту поездки — наличными, картой или переводом.",
         },
         {
             q: "Сколько мест в автомобиле?",
@@ -50,7 +50,7 @@ const faqs = {
         },
         {
             q: "Алдын ала төлеу керек пе?",
-            a: "Жоқ. Төлем сапардан кейін жүргізіледі. Алдын ала төлем қажет емес.",
+            a: "Брондауды растау үшін 10–20% алдын ала төлем сұраймыз. Қалғаны сапардан кейін — қолма-қол, картамен немесе аударыммен.",
         },
         {
             q: "Көлікте неше орын бар?",
@@ -76,7 +76,7 @@ const faqs = {
         },
         {
             q: "Do I need to pay in advance?",
-            a: "No. Payment is made after the ride. No prepayment required.",
+            a: "We ask for a 10–20% deposit to confirm the booking. The remaining balance is paid after the ride — by cash, card or transfer.",
         },
         {
             q: "How many passengers fit?",
@@ -114,7 +114,7 @@ export function FAQ() {
     }, [locale]);
 
     return (
-        <section className="py-24 md:py-32 bg-[var(--surface)]">
+        <section className="py-14 md:py-20 bg-[var(--surface)]">
             <div className="max-w-3xl mx-auto px-5 md:px-10">
                 <Reveal>
                     <div className="text-[10px] uppercase tracking-[0.35em] text-gold mb-4 text-center">FAQ</div>

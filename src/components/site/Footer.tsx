@@ -2,6 +2,11 @@ import { Link } from "@tanstack/react-router";
 import { useLocale } from "@/i18n/context";
 import { PHONE, TEL, wa } from "@/i18n/dictionaries";
 import logo from "@/assets/logo-opt.png";
+import { Instagram, Youtube } from "lucide-react";
+
+// TODO: замените # на реальные ссылки когда будут готовы
+const INSTAGRAM_URL = "#";
+const YOUTUBE_URL = "#";
 
 export function Footer() {
   const { t } = useLocale();
@@ -50,6 +55,26 @@ export function Footer() {
           >
             WhatsApp
           </a>
+          <div className="mt-4 flex items-center gap-3">
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="w-9 h-9 flex items-center justify-center rounded-full border border-gold/20 text-foreground/60 hover:text-gold hover:border-gold/50 transition-colors"
+            >
+              <Instagram size={16} />
+            </a>
+            <a
+              href={YOUTUBE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="w-9 h-9 flex items-center justify-center rounded-full border border-gold/20 text-foreground/60 hover:text-gold hover:border-gold/50 transition-colors"
+            >
+              <Youtube size={16} />
+            </a>
+          </div>
           <p className="mt-4 text-sm text-muted-foreground">{t.footer.hours}</p>
           <p className="mt-1 text-sm text-muted-foreground">{t.footer.city}</p>
           <p className="mt-1 text-sm text-muted-foreground">{t.footer.address}</p>

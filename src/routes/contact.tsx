@@ -3,6 +3,10 @@ import { useLocale } from "@/i18n/context";
 import { Reveal } from "@/components/site/Reveal";
 import { PHONE, TEL, wa } from "@/i18n/dictionaries";
 import skyline from "@/assets/astana-skyline-night.jpg";
+import { Instagram, Youtube } from "lucide-react";
+
+const INSTAGRAM_URL = "#"; // TODO: вставьте ссылку
+const YOUTUBE_URL = "#";   // TODO: вставьте ссылку
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -11,7 +15,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Закажите аренду частного джета или VIP-трансфер в Астане. WhatsApp 24/7: +7 708 938 08 00. Менеджер Санат. Быстрый ответ. Казахстан.",
+          "Закажите аренду частного джета или VIP-трансфер в Астане. WhatsApp 24/7: +7 708 938 08 00. Быстрый ответ. Казахстан.",
       },
       {
         name: "keywords",
@@ -54,7 +58,7 @@ function ContactPage() {
             >
               <div className="text-xs uppercase tracking-[0.25em] text-gold">{c.waLabel}</div>
               <div className="mt-3 font-display text-3xl group-hover:gradient-gold-text transition-colors">{PHONE}</div>
-              <div className="mt-2 text-sm text-foreground/60">WhatsApp · {c.manager}</div>
+              <div className="mt-2 text-sm text-foreground/60">WhatsApp · {"Менеджер · 24/7"}</div>
             </a>
             <a
               href={`tel:${TEL}`}
@@ -62,7 +66,31 @@ function ContactPage() {
             >
               <div className="text-xs uppercase tracking-[0.25em] text-gold">{c.callLabel}</div>
               <div className="mt-3 font-display text-3xl group-hover:gradient-gold-text transition-colors">{PHONE}</div>
-              <div className="mt-2 text-sm text-foreground/60">{c.manager}</div>
+              <div className="mt-2 text-sm text-foreground/60">{"Менеджер · 24/7"}</div>
+            </a>
+          </div>
+        </Reveal>
+
+        <Reveal delay={300}>
+          <div className="mt-10 flex items-center gap-4">
+            <span className="text-xs uppercase tracking-[0.25em] text-foreground/50">Мы в соцсетях</span>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="flex items-center gap-2 px-4 py-2 rounded-full border border-gold/20 text-foreground/60 hover:text-gold hover:border-gold/50 transition-colors text-sm"
+            >
+              <Instagram size={15} /> Instagram
+            </a>
+            <a
+              href={YOUTUBE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="flex items-center gap-2 px-4 py-2 rounded-full border border-gold/20 text-foreground/60 hover:text-gold hover:border-gold/50 transition-colors text-sm"
+            >
+              <Youtube size={15} /> YouTube
             </a>
           </div>
         </Reveal>

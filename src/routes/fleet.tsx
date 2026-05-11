@@ -6,6 +6,7 @@ import sideOpen from "@/assets/staria-side-open.jpg";
 import interior from "@/assets/staria-interior-captain.jpg";
 import detail from "@/assets/staria-airport-fleet.jpg";
 import front from "@/assets/staria-front-headlights.jpg";
+import heroFleet from "@/assets/hero-staria-astana.jpg";
 import real1 from "@/assets/fleet-real-1.jpg";
 import real2 from "@/assets/fleet-real-2.jpg";
 import real3 from "@/assets/fleet-real-3.jpg";
@@ -60,8 +61,8 @@ function FleetPage() {
           </Reveal>
           <Reveal delay={200}>
             <div className="mt-12 relative aspect-[16/9] rounded-2xl overflow-hidden border border-gold/20 shadow-luxe">
-              <img src={real1} alt="Hyundai Staria LUXE у VIP-терминала Астана" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+              <img src={heroFleet} alt="Hyundai Staria LUXE в Астане" className="w-full h-full object-cover object-center" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
             </div>
           </Reveal>
         </div>

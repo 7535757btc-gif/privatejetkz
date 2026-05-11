@@ -7,7 +7,7 @@ import skyline from "@/assets/astana-skyline-night.jpg";
 export function FinalCTA() {
   const { t } = useLocale();
   return (
-    <section className="relative py-24 md:py-36 overflow-hidden">
+    <section className="relative py-14 md:py-20 overflow-hidden">
       <img
         src={skyline}
         alt=""

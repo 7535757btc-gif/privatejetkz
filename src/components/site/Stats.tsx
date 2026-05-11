@@ -68,7 +68,7 @@ export function Stats() {
     }, []);
 
     return (
-        <section className="py-20 md:py-28 bg-background">
+        <section className="py-10 md:py-14 bg-background">
             <div className="max-w-7xl mx-auto px-5 md:px-10">
                 <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-5">
                     {items.map((s, i) => (

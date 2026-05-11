@@ -19,7 +19,7 @@ export function HeadlightsSection() {
   }, []);
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32 bg-background overflow-hidden">
+    <section ref={ref} className="relative py-14 md:py-20 bg-background overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 md:px-10 grid md:grid-cols-2 gap-12 items-center">
         <div className="relative aspect-video rounded-2xl overflow-hidden border border-gold/20 shadow-luxe">
           <img

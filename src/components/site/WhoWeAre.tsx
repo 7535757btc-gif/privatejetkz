@@ -27,7 +27,7 @@ export function WhoWeAre() {
   const doorShift = Math.max(0, Math.min(1, (progress - 0.05) / 0.5));
 
   return (
-    <section ref={ref} className="relative h-[130vh] md:h-[200vh] bg-background">
+    <section ref={ref} className="relative h-[110vh] md:h-[150vh] bg-background">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <div className="max-w-7xl mx-auto w-full px-5 md:px-10 grid md:grid-cols-2 gap-12 items-center">
           <div>

@@ -68,14 +68,14 @@ function FleetPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-[var(--surface)]">
+      <section className="py-12 bg-[var(--surface)]">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
-          <div className="text-[10px] uppercase tracking-[0.35em] text-gold mb-3">{f.specTitle}</div>
+          <div className="text-[9px] uppercase tracking-[0.3em] text-gold mb-3">{f.specTitle}</div>
           <div className="grid md:grid-cols-2 gap-px bg-gold/10 rounded-2xl overflow-hidden">
             {f.spec.map((s) => (
-              <div key={s.label} className="bg-[var(--surface)] p-7 flex justify-between items-baseline gap-6">
+              <div key={s.label} className="bg-[var(--surface)] p-5 flex justify-between items-baseline gap-6">
                 <span className="text-foreground/60 text-sm">{s.label}</span>
-                <span className="font-display text-2xl text-gold-bright">{s.value}</span>
+                <span className="font-display text-lg text-gold-bright">{s.value}</span>
               </div>
             ))}
           </div>

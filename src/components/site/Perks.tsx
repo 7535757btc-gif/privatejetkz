@@ -4,14 +4,14 @@ import { Reveal } from "./Reveal";
 export function Perks() {
   const { t } = useLocale();
   return (
-    <section className="py-24 md:py-32 bg-[var(--surface)] border-y border-gold/10">
+    <section className="py-14 md:py-20 bg-[var(--surface)] border-y border-gold/10">
       <div className="max-w-7xl mx-auto px-5 md:px-10">
         <Reveal>
           <h2 className="font-display text-4xl md:text-5xl text-center max-w-2xl mx-auto">
             {t.perks.title}
           </h2>
         </Reveal>
-        <div className="mt-14 md:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gold/10">
+        <div className="mt-10 md:mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gold/10">
           {t.perks.items.map((it, i) => (
             <Reveal key={it.t} delay={i * 80} className="bg-[var(--surface)] p-8 md:p-10 group hover:bg-background/40 transition-colors">
               <div className="flex items-start gap-4">

@@ -59,13 +59,13 @@ export function Booking() {
   };
 
   return (
-    <section id="booking" className="relative py-24 md:py-32 bg-background overflow-hidden">
+    <section id="booking" className="relative py-14 md:py-20 bg-background overflow-hidden">
       <div className="absolute inset-0 pointer-events-none opacity-[0.04] [background:radial-gradient(circle_at_50%_0%,var(--gold)_0%,transparent_55%)]" />
       <div className="relative max-w-5xl mx-auto px-5 md:px-10">
         <Reveal>
           <div className="text-center mb-10 md:mb-14">
             <div className="text-[10px] uppercase tracking-[0.35em] text-gold mb-4">{t.booking.eyebrow}</div>
-            <h2 className="font-display text-4xl md:text-6xl leading-[1.05]">
+            <h2 className="font-display text-3xl md:text-5xl leading-[1.05]">
               {t.booking.title.split(" ").slice(0, -2).join(" ")}{" "}
               <span className="gradient-gold-text italic">
                 {t.booking.title.split(" ").slice(-2).join(" ")}

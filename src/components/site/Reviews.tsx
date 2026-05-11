@@ -5,7 +5,7 @@ export function Reviews() {
   const { t } = useLocale();
   const r = t.reviews;
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section className="py-14 md:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-5 md:px-10">
         <Reveal>
           <div className="text-[10px] uppercase tracking-[0.35em] text-gold mb-4">{r.eyebrow}</div>
@@ -13,7 +13,7 @@ export function Reviews() {
           <p className="mt-5 max-w-xl text-foreground/65">{r.sub}</p>
         </Reveal>
 
-        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {r.items.map((it, i) => (
             <Reveal key={it.name} delay={i * 80}>
               <article className="group h-full p-7 rounded-2xl border border-gold/15 bg-[var(--surface)] hover:border-gold/40 transition-colors relative overflow-hidden">

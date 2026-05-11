@@ -53,7 +53,7 @@ const JSON_LD = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Private Jet KZ",
-  "description": "VIP-трансфер с собственным автопарком в Астане на Hyundai Staria LUXE. Встреча делегаций, трансфер из аэропорта NQZ, почасовая аренда, межгород от 100 000 ₸.",
+  "description": "VIP-трансфер с собственным автопарком в Астане на Hyundai Staria LUXE. Встреча делегаций, трансфер из аэропорта NQZ, почасовая аренда, междугородние поездки от 200 ₸/км.",
   "url": SITE_URL,
   "telephone": "+77089380800",
   "priceRange": "$$$$",
@@ -87,7 +87,7 @@ const JSON_LD = JSON.stringify({
     "itemListElement": [
       { "@type": "Offer", "name": "VIP трансфер Астана", "price": "25000", "priceCurrency": "KZT" },
       { "@type": "Offer", "name": "Аренда по часам", "price": "15000", "priceCurrency": "KZT" },
-      { "@type": "Offer", "name": "Межгород (Боровое, Карагандa)", "price": "100000", "priceCurrency": "KZT" },
+      { "@type": "Offer", "name": "Междугородние поездки (Боровое, Караганда)", "price": "200", "priceCurrency": "KZT" },
     ],
   },
   "serviceArea": {
@@ -102,11 +102,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Private Jet KZ — Аренда частного джета и VIP трансфер в Астане" },
+      { title: "Private Jet KZ — Аренда трансфера в Астане" },
       {
         name: "description",
         content:
-          "VIP-трансфер с собственным автопарком в Астане — Hyundai Staria LUXE. Встреча в аэропорту NQZ, трансфер Астана–Боровое от 100 000 ₸, корпоративный трансфер, аренда минивэна. ул. Толе би, 25/1. WhatsApp +7 708 938 08 00.",
+          "VIP-трансфер на Hyundai Staria LUXE в Астане. Встреча в аэропорту NQZ, трансфер Астана–Боровое от 200 ₸/км, корпоративный трансфер, аренда минивэна. ул. Толе Би, 25/1. WhatsApp +7 708 938 08 00.",
       },
       {
         name: "keywords",
@@ -122,7 +122,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "language", content: "Russian" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Private Jet KZ" },
-      { property: "og:title", content: "Private Jet KZ — Аренда частного джета и VIP трансфер в Астане" },
+      { property: "og:title", content: "Private Jet KZ — Аренда трансфера в Астане" },
       {
         property: "og:description",
         content:
@@ -134,7 +134,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:url", content: SITE_URL },
       { property: "og:locale", content: "ru_KZ" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Private Jet KZ — Аренда частного джета в Астане" },
+      { name: "twitter:title", content: "Private Jet KZ — Аренда трансфера в Астане" },
       {
         name: "twitter:description",
         content: "VIP-трансфер и аренда частного джет-минивэна в Астане. Казахстан. WhatsApp +7 708 938 08 00.",

@@ -71,6 +71,8 @@ export function Hero() {
           <Badge>{t.hero.badge2}</Badge>
           <Badge>{t.hero.badge3}</Badge>
           <Badge>{t.hero.badge4}</Badge>
+          <Badge>{t.hero.badge5}</Badge>
+          <Badge>{t.hero.badge6}</Badge>
         </div>
       </div>
 

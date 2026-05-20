@@ -212,11 +212,11 @@ const ru: Dict = {
   },
   marquee: [
     "10 ЛЕТ НА РЫНКЕ",
-    "ПАРК ИЗ 5 АВТО",
-    "24/7 НА СВЯЗИ",
     "3000+ ПОЕЗДОК",
+    "ПАРК ИЗ 5 АВТО",
     "КАПИТАНСКИЕ КРЕСЛА",
     "ОПЫТНЫЕ ВОДИТЕЛИ",
+    "24/7 НА СВЯЗИ",
   ],
   airport: {
     eyebrow: "В аэропорту",
@@ -453,11 +453,11 @@ const kz: Dict = {
   },
   marquee: [
     "10 ЖЫЛ НАРЫҚТА",
-    "5 КӨЛІКТЕН ПАРК",
-    "24/7 БАЙЛАНЫСТА",
     "3000+ САПАР",
+    "5 КӨЛІКТЕН ПАРК",
     "КАПИТАН ОРЫНДЫҚТАР",
     "ТӘЖІРИБЕЛІ ЖҮРГІЗУШІЛЕР",
+    "24/7 БАЙЛАНЫСТА",
   ],
   airport: {
     eyebrow: "Әуежайда",
@@ -692,7 +692,7 @@ const en: Dict = {
     title: "Where deals are made — between rides",
     sub: "Leather, warm ambient light, silence. A bottle of water already in the holder.",
   },
-  marquee: ["10 YEARS IN MARKET", "FLEET OF 5 CARS", "24/7 AVAILABLE", "3000+ RIDES", "CAPTAIN SEATS", "EXPERT DRIVERS"],
+  marquee: ["10 YEARS IN MARKET", "3000+ RIDES", "FLEET OF 5 CARS", "CAPTAIN SEATS", "EXPERT DRIVERS", "24/7 AVAILABLE"],
   airport: {
     eyebrow: "At the airport",
     title: "We meet you at the gate with a sign",

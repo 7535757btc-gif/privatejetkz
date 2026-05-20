@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import { useLocale } from "@/i18n/context";
 import skyline from "@/assets/astana-skyline-night.jpg";
 import staria from "@/assets/hero-staria-astana.jpg";
@@ -37,20 +37,37 @@ export function AstanaTour() {
   const { locale } = useLocale();
   const stops = STOPS[locale];
   const head = HEADERS[locale];
-  const ref = useRef<HTMLDivElement | null>(null);
-  const [progress, setProgress] = useState(0);
 
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const trackRef = useRef<HTMLDivElement | null>(null);
+  const skylineRef = useRef<HTMLDivElement | null>(null);
+  const carRef = useRef<HTMLDivElement | null>(null);
+  const progressBarRef = useRef<HTMLDivElement | null>(null);
   const rafRef = useRef<number | null>(null);
 
   const updateProgress = useCallback(() => {
-    const el = ref.current;
+    const el = sectionRef.current;
     if (!el) return;
     const rect = el.getBoundingClientRect();
     const vh = window.innerHeight;
     const total = rect.height - vh;
     const p = Math.max(0, Math.min(1, -rect.top / total));
-    setProgress(p);
-  }, []);
+
+    const trackShift = p * (100 - 100 / stops.length);
+
+    if (trackRef.current) {
+      trackRef.current.style.transform = `translateX(-${trackShift}%)`;
+    }
+    if (skylineRef.current) {
+      skylineRef.current.style.transform = `translateX(${-p * 15}%) scale(1.1)`;
+    }
+    if (carRef.current) {
+      carRef.current.style.left = `${p * 80}vw`;
+    }
+    if (progressBarRef.current) {
+      progressBarRef.current.style.width = `${p * 100}%`;
+    }
+  }, [stops.length]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -65,18 +82,11 @@ export function AstanaTour() {
     };
   }, [updateProgress]);
 
-  // translate horizontal track: from 0% to -((stops-1)/stops)*100%
-  const trackShift = progress * (100 - 100 / stops.length);
-  const carShift = progress * 80; // 0 -> 80vw
-
   return (
-    <section ref={ref} className="relative bg-background" style={{ height: `${stops.length * 90}svh` }}>
+    <section ref={sectionRef} className="relative bg-background" style={{ height: `${stops.length * 90}svh` }}>
       <div className="sticky top-0 overflow-hidden" style={{ height: "100svh" }}>
         {/* Skyline backdrop with parallax */}
-        <div
-          className="absolute inset-0 will-change-transform"
-          style={{ transform: `translateX(${-progress * 15}%) scale(1.1)` }}
-        >
+        <div ref={skylineRef} className="absolute inset-0 will-change-transform" style={{ transform: "translateX(0%) scale(1.1)" }}>
           <img src={skyline} alt="" aria-hidden className="w-full h-full object-cover opacity-50" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/30 to-background" />
         </div>
@@ -90,10 +100,11 @@ export function AstanaTour() {
         {/* Horizontal track */}
         <div className="absolute inset-x-0 bottom-0 top-[40%]">
           <div
+            ref={trackRef}
             className="flex h-full will-change-transform"
             style={{
               width: `${stops.length * 100}%`,
-              transform: `translateX(-${trackShift}%)`,
+              transform: "translateX(0%)",
             }}
           >
             {stops.map((s, i) => (
@@ -116,10 +127,10 @@ export function AstanaTour() {
 
         {/* Driving Staria silhouette */}
         <div
+          ref={carRef}
           className="absolute bottom-8 will-change-transform pointer-events-none hidden md:block"
           style={{
-            left: `${carShift}vw`,
-            transition: "left 0.1s linear",
+            left: "0vw",
             width: "32vw",
             maxWidth: 540,
           }}
@@ -129,7 +140,7 @@ export function AstanaTour() {
 
         {/* Progress bar */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gold/10">
-          <div className="h-full bg-gradient-to-r from-[var(--gold)] to-[var(--gold-bright)]" style={{ width: `${progress * 100}%` }} />
+          <div ref={progressBarRef} className="h-full bg-gradient-to-r from-[var(--gold)] to-[var(--gold-bright)]" style={{ width: "0%" }} />
         </div>
       </div>
     </section>

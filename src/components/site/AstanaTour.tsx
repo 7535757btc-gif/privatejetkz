@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { useLocale } from "@/i18n/context";
 import skyline from "@/assets/astana-skyline-night.jpg";
 import staria from "@/assets/hero-staria-astana.jpg";
@@ -40,28 +40,38 @@ export function AstanaTour() {
   const ref = useRef<HTMLDivElement | null>(null);
   const [progress, setProgress] = useState(0);
 
-  useEffect(() => {
+  const rafRef = useRef<number | null>(null);
+
+  const updateProgress = useCallback(() => {
     const el = ref.current;
     if (!el) return;
-    const onScroll = () => {
-      const rect = el.getBoundingClientRect();
-      const vh = window.innerHeight;
-      const total = rect.height - vh;
-      const p = Math.max(0, Math.min(1, -rect.top / total));
-      setProgress(p);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const total = rect.height - vh;
+    const p = Math.max(0, Math.min(1, -rect.top / total));
+    setProgress(p);
   }, []);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(updateProgress);
+    };
+    updateProgress();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [updateProgress]);
 
   // translate horizontal track: from 0% to -((stops-1)/stops)*100%
   const trackShift = progress * (100 - 100 / stops.length);
   const carShift = progress * 80; // 0 -> 80vw
 
   return (
-    <section ref={ref} className="relative bg-background" style={{ height: `${stops.length * 90}vh` }}>
-      <div className="sticky top-0 h-screen overflow-hidden">
+    <section ref={ref} className="relative bg-background" style={{ height: `${stops.length * 90}svh` }}>
+      <div className="sticky top-0 overflow-hidden" style={{ height: "100svh" }}>
         {/* Skyline backdrop with parallax */}
         <div
           className="absolute inset-0 will-change-transform"
@@ -80,7 +90,7 @@ export function AstanaTour() {
         {/* Horizontal track */}
         <div className="absolute inset-x-0 bottom-0 top-[40%]">
           <div
-            className="flex h-full will-change-transform transition-transform duration-100"
+            className="flex h-full will-change-transform"
             style={{
               width: `${stops.length * 100}%`,
               transform: `translateX(-${trackShift}%)`,

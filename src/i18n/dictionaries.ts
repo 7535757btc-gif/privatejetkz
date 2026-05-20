@@ -127,10 +127,10 @@ const ru: Dict = {
     title2: "Astana.",
     subtitle:
       "Premium-трансфер на Hyundai Staria LUXE. Встречаем гостей, делегации и первых лиц — без опозданий, без лишних слов.",
-    badge1: "10 лет · 5 авто · 3 000+ поездок",
-    badge2: "Флот из 5 авто",
-    badge3: "Капитанские кресла",
-    badge4: "Опытные водители",
+    badge1: "10 лет на рынке",
+    badge2: "3 000+ поездок",
+    badge3: "Парк из 5 авто",
+    badge4: "24/7 на связи",
     scroll: "Прокрутите вниз",
   },
   headlights: {
@@ -368,10 +368,10 @@ const kz: Dict = {
     title2: "Astana.",
     subtitle:
       "Hyundai Staria LUXE-те Premium трансфер. Қонақтарды, делегацияларды және бірінші тұлғаларды кешіктірмей қарсы аламыз.",
-    badge1: "10 жыл · 5 авто · 3 000+ сапар",
-    badge2: "5 көліктен флот",
-    badge3: "Капитан орындықтар",
-    badge4: "Тәжірибелі жүргізушілер",
+    badge1: "10 жыл нарықта",
+    badge2: "3 000+ сапар",
+    badge3: "5 көліктен парк",
+    badge4: "24/7 байланыста",
     scroll: "Төмен айналдырыңыз",
   },
   headlights: {
@@ -609,10 +609,10 @@ const en: Dict = {
     title2: "Astana",
     subtitle:
       "Premium transfer on Hyundai Staria LUXE. We meet guests, delegations and VIPs — on time, every time, with no fuss.",
-    badge1: "10 years · 5 cars · 3,000+ rides",
-    badge2: "Fleet of 5 cars",
-    badge3: "Captain seats",
-    badge4: "Experienced drivers",
+    badge1: "10 years in market",
+    badge2: "3,000+ rides",
+    badge3: "Fleet of 5 cars",
+    badge4: "24/7 available",
     scroll: "Scroll down",
   },
   headlights: {
